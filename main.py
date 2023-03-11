@@ -22,7 +22,7 @@ class MainWindow(QMainWindow):
         url = current_dir + '/index.html'
         self.browser.load(QUrl( url ))  
         self.setCentralWidget(self.browser)
-        self.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint | QtCore.Qt.FramelessWindowHint)
+        self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
     
 
     def location_on_the_screen(self):
